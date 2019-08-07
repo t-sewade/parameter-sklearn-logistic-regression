@@ -1,4 +1,4 @@
-name: sklearn-example
+name: sklearn-parameter-example
 channels:
   - defaults
   - anaconda

@@ -1,7 +1,11 @@
-name: sklearn_logistic_example
+name: parameter_sklearn_logistic_example
 
 conda_env: conda.yaml
 
 entry_points:
   main:
-    command: "python train.py"
+    parameters:
+      penalty: string
+      C: {type: float, default: 1.0}
+      tol: {type: float, default: 1e-4}
+    command: "python train.py {penalty} {C} {tol}"
